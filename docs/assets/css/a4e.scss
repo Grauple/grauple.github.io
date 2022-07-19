@@ -1,0 +1,66 @@
+body {
+  background-color: #1a191a;
+  color: #FCFCFC;
+}
+/*img {
+    Width: 100%;
+    Height: Auto;
+}*/
+/* The following UL/LI is intended to create a horizontal navigation bar*/
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding 0;
+  background-color:#336699;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  padding: 14px;
+  color: white;
+  Text-align: center;
+  text-decoration: none;
+}
+
+/*The immediate LI a line is intended to change the color of the nav bar when hovered over*/
+li a:hover {
+  background-color: #225588;
+}
+
+h1 {
+  text-align: center;
+
+}
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+/* table, th, td {
+   border: 1px solid white;
+   width: 50%; */
+}
+
+p {
+  text-align: center;
+  margin-right: 200px;
+  margin-left: 200px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+}
