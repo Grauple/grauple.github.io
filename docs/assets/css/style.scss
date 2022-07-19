@@ -6,6 +6,7 @@ body {
     Width: 100%;
     Height: Auto;
 }*/
+/* The following UL/LI is intended to create a horizontal navigation bar*/
 
 ul {
   list-style-type: none;
@@ -14,13 +15,20 @@ ul {
   background-color:#336699
 }
 li {
-  display: inline;
+  float: left;
 }
 
 li a {
   display: block;
-  padding: 5px;
-    
+  padding:8px;
+  color: white;
+  Text-align: center;
+  text-decoration: none;
+}
+
+/*The immediate LI a line is intended to change the color of the nav bar when hovered over*/
+li a:hover {
+  background-color: #225588;
 }
 
 h1 {
