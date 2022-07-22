@@ -6,19 +6,19 @@
         <link rel="stylesheet" type="text/css" href="docs/assets/css/style.scss"> 
         <Title>Forms</Title>
       </head>  
-
+<script>
+     function ttlbudget(){
+      ndays = document.getElementById("days").value;
+      nppl = document.getElementById("ppl").value;
+      budget = nppl*ndays*228;
+       alert ("Your budget should be: " + budget);
+       }
+       </script>
      
      <h3>
        Calculate your vacation budget.
      </h3>
-      <script type ="javascript">
-     function ttlbudget(){
-      ndays = parseint(document.getElementById("days").value);
-      nppl = parseint(document.getElementById("ppl").value);
-      budget = parseint(nppl*ndays*228);
-       alert ("Your budget should be: " + budget);
-       }
-       </script>
+      
      <form> 
                  <table style="width:40%">
                                     
