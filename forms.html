@@ -13,9 +13,9 @@
      </h3>
       <script type ="javascript">
      function ttlbudget(){
-      ndays = int(document.getElementByID("days").value);
-      nppl = int(document.getElementByID("ppl").value);
-      budget = int(nppl*ndays*228);
+      ndays = parseint(document.getElementById("days").value);
+      nppl = parseint(document.getElementById("ppl").value);
+      budget = parseint(nppl*ndays*228);
        alert ("Your budget should be: " + budget);
        }
        </script>
