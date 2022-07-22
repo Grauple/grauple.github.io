@@ -11,7 +11,15 @@
      <h3>
        Calculate your vacation budget.
      </h3>
-     <form name="vcalc" action="" method="get"> 
+      <script>
+     function ttlbudget (){
+      ndays = int(document.getElementByID("days").value);
+      nppl = int(document.getElementByID("ppl").value);
+      budget = nppl*ndays*228;
+       alert ("Your budget should be: " + budget);
+       }
+       </script>
+     <form> 
                  <table style="width:40%">
                                     
                     <tr>   
@@ -30,14 +38,7 @@
      </table>
      </form>    
                       Note: The average cost per day to vacation is approximately $228.
-     <script>
-     function ttlbudget (){
-      ndays = int(document.getElementByID("days").value);
-      nppl = int(document.getElementByID("ppl").value);
-      budget = nppl*ndays*228;
-       alert ("Your budget should be: " + budget);
-       }
-       </script>
+    
     
     <body>
   </body>
