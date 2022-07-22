@@ -11,17 +11,30 @@
      <h3>
        Calculate your vacation budget.
      </h3>
+     <form name="vcalc" action="" method="get"> 
                  <table style="width:40%">
-                                     
+                                    
                     <tr>   
                          <td style="width 50%"> How many days will you be vacationing?</td>
-                         <td ><input type="Text"></td>
+                         <td ><input type="Text" Name="days" value=""></td>
                     </tr>  
                     <tr>   
                          <td style="width 50%"> How many people will be traveling?</td>
-                         <td ><input type="Text"></td>
+                         <td ><input type="Text" Name="ppl" value=""></td>
                     </tr>  
+                   <tr>   
+                         <td style="width 50%"> Your budget should be:</td>
+                         <td ><input type="Button" Name="Calculate" value="Calculate" onClick="budget(this.vcalc)></td>
+                    </tr>  
+                  
+     </table>
+     </form>    
                       Note: The average cost per day to vacation is approximately $228.
+     <script>
+       var ndays = form.days.value;
+       var nppl = form.ppl.value;
+       var budget = ppl*days;
+       </script>
     
     <body>
   </body>
