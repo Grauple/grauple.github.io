@@ -24,7 +24,7 @@
                     </tr>  
                    <tr>   
                          <td style="width 50%"> Your budget should be:</td>
-                         <td ><input type="Button" Name="Calculate" value="Calculate" onClick="budget(this.vcalc)></td>
+                         <td ><input type="Button" Name="Calculate" value="Calculate" onClick="ttlbudget(this.vcalc)"></td>
                     </tr>  
                   
      </table>
@@ -35,6 +35,7 @@
        var ndays = form.days.value;
        var nppl = form.ppl.value;
        var budget = ppl*days;
+       alert ("Your budget should be: " + budget);
        }
        </script>
     
