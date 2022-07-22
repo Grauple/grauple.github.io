@@ -16,15 +16,15 @@
                                     
                     <tr>   
                          <td style="width 50%"> How many days will you be vacationing?</td>
-                         <td ><input type="Text" Name="days" value=""></td>
+                         <td ><input type="Text" id="days" value=""></td>
                     </tr>  
                     <tr>   
                          <td style="width 50%"> How many people will be traveling?</td>
-                         <td ><input type="Text" Name="ppl" value=""></td>
+                         <td ><input type="Text" id="ppl" value=""></td>
                     </tr>  
                    <tr>   
                          <td style="width 50%"> Your budget should be:</td>
-                         <td ><input type="Button" Name="Calculate" value="Calculate" onClick="ttlbudget()"></td>
+                         <td ><input type="Button" id="Calculate" value="Calculate" onClick="ttlbudget()"></td>
                     </tr>  
                   
      </table>
@@ -32,9 +32,9 @@
                       Note: The average cost per day to vacation is approximately $228.
      <script>
      function ttlbudget (){
-       var ndays = form.days.value;
-       var nppl = form.ppl.value;
-       var budget = ppl*days;
+      ndays = int(document.getElementByID("days").value);
+      nppl = int(document.getElementByID("ppl").value);
+      budget = nppl*ndays;
        alert ("Your budget should be: " + budget);
        }
        </script>
