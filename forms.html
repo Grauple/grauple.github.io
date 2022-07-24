@@ -8,8 +8,8 @@
       </head>  
 <script>
      function ttlbudget(){
-      ndays = document.getElementById("days").value;
-      nppl = document.getElementById("ppl").value;
+      ndays = parseInt(document.getElementById("days")).value;
+      nppl = parseInt(document.getElementById("ppl")).value;
       budget = nppl*ndays*228;
        alert ("Your budget should be: " + budget);
        }
