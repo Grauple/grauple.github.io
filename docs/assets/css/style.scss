@@ -26,7 +26,6 @@ body {
 .flexbox-item {
   width: 200px;
   margin: 35px;
-  padding: 100px;
   flex-grow: 1;
 /*  min-width: 432px;
   min-height: 240px; */
@@ -37,7 +36,7 @@ body {
 .flexbox-item-1 {
   flex-grow: 1;
   min-height: 192px; 
-  
+  padding: 100px;
   margin: 35px;
 }
 
@@ -45,6 +44,7 @@ body {
 .flexbox-item-2 {
   flex-grow: 2;
   min-height: 192px;  
+  padding: 100px;
   margin: 35px;
 }
 
