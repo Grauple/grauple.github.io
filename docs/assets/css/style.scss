@@ -16,7 +16,7 @@ body {
 .flexbox-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+ /* justify-content: space-around;*/
   align-items: center;
   align-content: center;
   margin: 15px;
@@ -36,7 +36,6 @@ body {
 .flexbox-item-1 {
   flex-grow: 1;
   min-height: 192px; 
-  padding: 100px;
   margin: 35px;
 }
 
@@ -44,7 +43,6 @@ body {
 .flexbox-item-2 {
   flex-grow: 2;
   min-height: 192px;  
-  padding: 100px;
   margin: 35px;
 }
 
