@@ -19,7 +19,6 @@ body {
   justify-content: space-around;
   align-items: center;
   align-content: center;
-  padding: 100px;
   margin: 15px;
   
 }
@@ -27,6 +26,7 @@ body {
 .flexbox-item {
   width: 200px;
   margin: 35px;
+  padding: 100px;
   flex-grow: 1;
 /*  min-width: 432px;
   min-height: 240px; */
@@ -37,6 +37,7 @@ body {
 .flexbox-item-1 {
   flex-grow: 1;
   min-height: 192px; 
+  
   margin: 35px;
 }
 
