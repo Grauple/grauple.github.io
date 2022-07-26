@@ -16,7 +16,7 @@ body {
 .flexbox-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   align-content: center;
   margin: 15px;
@@ -24,10 +24,8 @@ body {
 }
 /* flexible boxes to be placed inside a flexible container to adjust with screen and window dimensions*/
 .flexbox-item {
-  width: 540px;
-  height: 300px;
+  width: 200px;
   margin: 10px;
-  border: none;
   flex-grow: 1;
 /*  min-width: 432px;
   min-height: 240px; */
@@ -37,7 +35,6 @@ body {
 /* flexible boxes to be placed inside a flexible container to adjust with screen and window dimensions*/
 .flexbox-item-1 {
   flex-grow: 1;
-  min-width: 350px;
   min-height: 192px; 
   margin: auto;
 }
@@ -45,7 +42,6 @@ body {
 /* flexible boxes to be placed inside a flexible container to adjust with screen and window dimensions*/
 .flexbox-item-2 {
   flex-grow: 1;
-  min-width: 350px;
   min-height: 192px;  
   margin: auto;
 }
