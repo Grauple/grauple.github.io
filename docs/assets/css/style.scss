@@ -2,11 +2,49 @@ body {
   background-color: #1a191a;
   color: #FCFCFC;
 }
-/*img {
-    Width: 100%;
-    Height: Auto;
-}*/
-/* The following UL/LI is intended to create a horizontal navigation bar*/
+
+/* Container to hold all page contents */
+.page-content {
+  width:100%;
+  border: none;
+  padding: 15px;
+  margin:5px;
+  
+  
+}
+/* Container flex boxes for organization within the page */
+.flexbox-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  
+}
+/* flexible boxes to be placed inside a flexible container to adjust with screen and window dimensions*/
+.flexbox-item {
+  Width: 540px;
+  height: 300px;
+  border: none;
+  flex-grow: 1;
+/*  min-width: 432px;
+  min-height: 240px; */
+  
+  
+}
+/* flexible boxes to be placed inside a flexible container to adjust with screen and window dimensions*/
+.flexbox-item-1 {
+  flex-grow: 1;
+  min-width: 432px;
+  min-height: 240px; 
+}
+
+/* flexible boxes to be placed inside a flexible container to adjust with screen and window dimensions*/
+.flexbox-item-2 {
+  flex-grow: 1;
+  min-width: 432px;
+  min-height: 240px; 
+}
 
 ul {
   list-style-type: none;
