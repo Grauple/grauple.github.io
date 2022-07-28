@@ -7,7 +7,7 @@
         <Title>Forms</Title>
       </head>  
 <script>
-     function ttlbudget(){
+     function ttlbudget(myForm){
       ndays = document.getElementById("days").value;
       nppl = document.getElementById("ppl").value;
       budget = nppl*ndays*228;
@@ -19,7 +19,7 @@
        Calculate your vacation budget.
      </h3>
       
-     <form> 
+     <form name="myForm"> 
                  <table style="width:40%">
                                     
                     <tr>   
@@ -38,6 +38,34 @@
      </table>
      </form>    
                       Note: The average cost per day to vacation is approximately $228.
+  <br>
+  <hr>
+  <br>
+  <p>
+    <b>DISCOUNTS!</b>
+    <br>
+    Always check to see if there are discounts for any events you may be attending.  Many companies offer discounts for Students, Military, Seniors and more.
+    Just ask, the worst that could happen is being told they don't offer discounts.
+    </p>
+    
+   <form> 
+                 <table style="width:40%">
+                                    
+                    <tr>   
+                         <td style="width 50%"> Original Value</td>
+                         <td ><input type="Text" id="value" value="Enter Cost"></td>
+                    </tr>  
+                    <tr>   
+                         <td style="width 50%"> Discount Percent</td>
+                         <td ><input type="Text" id="discount" value="For 15% enter 15"></td>
+                    </tr>  
+                   <tr>   
+                         <td style="width 50%"> Your budget should be:</td>
+                         <td ><input type="Button" id="Calculate" onClick="ttlbudget()" value="Calculate"></td>
+                    </tr>  
+                  
+     </table>
+     </form>  
     
     
     <body>
