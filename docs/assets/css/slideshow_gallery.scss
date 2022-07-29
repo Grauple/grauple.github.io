@@ -27,6 +27,7 @@ body {
 }
 /* flexible boxes to be placed inside a flexible container to adjust with screen and window dimensions*/
 .flexbox-item {
+  display: flex;
   width: 200px;
   margin: 15px;
   /*  min-width: 432px;
