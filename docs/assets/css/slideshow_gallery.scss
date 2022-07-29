@@ -27,7 +27,7 @@ body {
 }
 /* flexible boxes to be placed inside a flexible container to adjust with screen and window dimensions*/
 .flexbox-item {
-   width: 200px;
+  width: 200px;
   margin: 15px;
   /*  min-width: 432px;
   min-height: 240px; */
@@ -129,7 +129,6 @@ img {
   float: left;
   width: auto; /*change back to 16.6 if it fails to work/
 }
-
 /* Add a transparency effect for thumnbail images */
 .demo {
   opacity: 0.6;
@@ -295,4 +294,3 @@ img {
 .active,
 .demo:hover {
   opacity: 1;
-}
