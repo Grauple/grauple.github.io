@@ -36,8 +36,8 @@ body {
 }
 /* flexible boxes to be placed inside a flexible container to adjust with screen and window dimensions*/
 .flexbox-item-1 {
-  flex-grow: 1;
-  flex-shrink: 1;
+  flex-grow: 2;
+  flex-shrink: 2;
   min-height: 200px; 
   min-width:200px;
   
@@ -45,12 +45,8 @@ body {
 
 /* flexible boxes to be placed inside a flexible container to adjust with screen and window dimensions*/
 .flexbox-item-2 {
-  flex-grow: 2;
+  flex-grow: 1;
   flex-shrink: 1;
-  min-height: 400px; 
-  min-width:400px;
-  margin: 75px;
-
 }
 
 
