@@ -1,0 +1,118 @@
+body {
+  font-family: Arial;
+  margin: 0;
+   background-color: #1a191a;
+  color: #FCFCFC;
+}
+
+/* Container to hold all page contents */
+.page-content {
+  display: flex;
+  width:100%;
+  border: none;
+  padding: 15px;
+  margin:5px;
+  
+  
+}
+/* Container flex boxes for organization within the page */
+.flexbox-container {
+  display: flex;
+  flex-wrap: wrap;
+ justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 15px;
+  
+}
+/* flexible boxes to be placed inside a flexible container to adjust with screen and window dimensions*/
+.flexbox-item {
+  width: 200px;
+  margin: 15px;
+  /*  min-width: 432px;
+  min-height: 240px; */
+   
+  
+}
+/* flexible boxes to be placed inside a flexible container to adjust with screen and window dimensions*/
+.flexbox-item-1 {
+  flex-grow:1;
+  flex-shrink:1;
+  min-height:200px; 
+  min-width:200px;
+  margin:25px;
+  
+}
+
+/* flexible boxes to be placed inside a flexible container to adjust with screen and window dimensions*/
+.flexbox-item-2 {
+  flex-grow:1;
+  flex-shrink:1;
+  max-height:200px; 
+  min-width:200px;
+  min-height:100px;
+}
+
+
+img {
+  vertical-align: middle;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding 0;
+  background-color:#336699;
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  width: 100%;
+}
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  padding: 14px;
+  color: white;
+  Text-align: center;
+  text-decoration: none;
+}
+
+/*The immediate LI a line is intended to change the color of the nav bar when hovered over*/
+li a:hover {
+  background-color: #225588;
+}
+
+h1 {
+  text-align: center;
+
+}
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+table, th { border: none;
+  padding: none;   
+}
+
+p {
+  text-align: center;
+  margin-right: 200px;
+  margin-left: 200px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+
