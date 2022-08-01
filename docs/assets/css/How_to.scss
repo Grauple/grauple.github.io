@@ -48,9 +48,9 @@ body {
 .flexbox-item-2 {
   flex-grow:1;
   flex-shrink:1;
-  max-height:200px; 
+  min-height:200px; 
   min-width:200px;
-  min-height:100px;
+  margin:25px;
 }
 
 
