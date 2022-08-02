@@ -1,5 +1,7 @@
 body {
-  background-color: #1a191a;
+  font-family: Arial;
+  margin: 0;
+   background-color: #1a191a;
   color: #FCFCFC;
 }
 /* Container to hold all page contents */
@@ -100,10 +102,18 @@ p {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-  * {box-sizing: border-box}
-body {font-family: Verdana, sans-serif; margin:0}
-.mySlides {display: none}
-img {vertical-align: middle;}
+  
+  
+  * {
+    box-sizing: border-box
+  }
+  
+.mySlides {
+  display: none
+  }
+img {
+  vertical-align: middle;
+  }
 
 /* Slideshow container */
 .slideshow-container {
@@ -118,8 +128,8 @@ img {vertical-align: middle;}
   position: absolute;
   top: 50%;
   width: auto;
-  padding: 16px;
   margin-top: -22px;
+  padding: 16px;
   color: white;
   font-weight: bold;
   font-size: 18px;
@@ -182,10 +192,9 @@ img {vertical-align: middle;}
 }
 
 @keyframes fade {
-  from {opacity: .4} 
+  from {opacity: .4}
   to {opacity: 1}
 }
-
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
