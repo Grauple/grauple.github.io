@@ -25,17 +25,24 @@ body {
   margin: 15px;
   
 }
+
 /* flexible boxes to be placed inside a flexible container to adjust with screen and window dimensions*/
 .flexbox-item {
+   display: flex;
+  justify-content: center;
+  align-items: center;
   width: 200px;
   margin: 15px;
   /*  min-width: 432px;
   min-height: 240px; */
    
-  
+  /*  !!!! Added flex, justify content, and align items to the flexbox and flexbox items*/
 }
 /* flexible boxes to be placed inside a flexible container to adjust with screen and window dimensions*/
 .flexbox-item-1 {
+   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-grow: 1;
   flex-shrink: 1;
   min-height: 200px; 
@@ -46,6 +53,9 @@ body {
 
 /* flexible boxes to be placed inside a flexible container to adjust with screen and window dimensions*/
 .flexbox-item-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   flex-grow: 1;
   flex-shrink: 1;
   max-height: 200px; 
