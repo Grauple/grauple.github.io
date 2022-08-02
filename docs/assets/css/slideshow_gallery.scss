@@ -2,7 +2,7 @@ body {
   font-family: Arial;
   margin: 0;
    background-color: #1a191a;
-  color: #FCFCFC; 
+  color: #FCFCFC;
 }
 
 /* Container to hold all page contents */
@@ -13,14 +13,8 @@ body {
   padding: 15px;
   margin:5px;
   
-  .box-center {
-   margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-    }
+  
+}
 /* Container flex boxes for organization within the page */
 .flexbox-container {
   display: flex;
@@ -308,5 +302,3 @@ img {
 .demo:hover {
   opacity: 1;
 }
-
-
