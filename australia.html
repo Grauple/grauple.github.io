@@ -185,7 +185,7 @@
    
                          <!--Begins formatting for Slideshow Gallery within flex box-->
 
-        <div class="container" style="height:auto">
+        <div class="container1" style="height:auto">
   <div class="mySlides1">
     <div class="numbertext">1 / 8</div>
     <img src="docs/assets/australia_pics/beach10.jpg" style="width:100%">
@@ -370,8 +370,6 @@ function currentSlide(n) {
 function showSlides(n) {
   let i;
   let slides = document.getElementsByClassName("mySlides", "mySlides1");
-  showDivs(1, 0);
-  showDivs(1, 1);
   let dots = document.getElementsByClassName("demo");
   let captionText = document.getElementById("caption");
   if (n > slides.length) {slideIndex = 1}
