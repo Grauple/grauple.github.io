@@ -75,9 +75,10 @@ img {
 .container {
   position: relative;
 }
-.container1 {
+.slideshow-container {
+  max-width: 800px;
   position: relative;
-}
+  margin: auto;
 
 /* Hide the images by default */
 .mySlides {
