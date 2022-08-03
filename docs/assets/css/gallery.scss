@@ -29,6 +29,7 @@ body {
 /* flexible boxes to be placed inside a flexible container to adjust with screen and window dimensions*/
 .flexbox-item {
    display: flex;
+  flex-grow: 1;
   justify-content: center;
   align-items: center;
  /* width: 200px;
@@ -206,7 +207,7 @@ p {
 }
 
 .center {
-  /*display: block;*/
+  display: block;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
