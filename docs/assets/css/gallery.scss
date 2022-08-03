@@ -4,8 +4,10 @@ body {
    background-color: #1a191a;
   color: #FCFCFC;
 }
+
 /* Container to hold all page contents */
 .page-content {
+  display: flex;
   width:100%;
   border: none;
   padding: 15px;
@@ -17,36 +19,141 @@ body {
 .flexbox-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+ justify-content: center;
   align-items: center;
   align-content: center;
+  margin: 15px;
   
 }
+
 /* flexible boxes to be placed inside a flexible container to adjust with screen and window dimensions*/
 .flexbox-item {
-  Width: 540px;
-  height: 300px;
-  border: none;
-  flex-grow: 1;
-/*  min-width: 432px;
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  margin: 15px;
+  /*  min-width: 432px;
   min-height: 240px; */
-  
-  
+   
+  /*  !!!! Added flex, justify content, and align items to the flexbox and flexbox items*/
 }
 /* flexible boxes to be placed inside a flexible container to adjust with screen and window dimensions*/
 .flexbox-item-1 {
+   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-grow: 1;
-  min-width: 432px;
-  min-height: 240px; 
+  flex-shrink: 2;
+  min-height: 200px; 
+  min-width:100px;
+ 
+  
 }
 
 /* flexible boxes to be placed inside a flexible container to adjust with screen and window dimensions*/
 .flexbox-item-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   flex-grow: 1;
-  min-width: 432px;
-  min-height: 240px; 
+  flex-shrink: 1;
+  max-height: 200px; 
+  min-width:100px;
+  min-height: 100px;
 }
-/* The following UL/LI is intended to create a horizontal navigation bar*/
+
+/** {
+  box-sizing: border-box;
+}*/
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(400, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #003399;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
 
 ul {
   list-style-type: none;
@@ -54,6 +161,7 @@ ul {
   padding 0;
   background-color:#336699;
   position: fixed;
+  z-index: 5;
   top: 0;
   width: 100%;
 }
@@ -102,35 +210,45 @@ p {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-  
-  
- 
+}
+* {
+  box-sizing: border-box;
+}
 
-.mySlides {display: none}
-  
-img {vertical-align: middle;}
+img {
+  vertical-align: middle;
+}
 
-/* Slideshow container */
+/* Position the image container (needed to position the left and right arrows) */
 .container {
-  max-width: 1000px;
   position: relative;
-  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
 }
 
 /* Next & previous buttons */
-.prev, .next {
+.prev,
+.next {
   cursor: pointer;
   position: absolute;
-  top: 50%;
+  top: 40%;
   width: auto;
   padding: 16px;
-  margin-top: -22px;
+  margin-top: -50px;
   color: white;
   font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
+  font-size: 20px;
   border-radius: 0 3px 3px 0;
   user-select: none;
+  -webkit-user-select: none;
 }
 
 /* Position the "next button" to the right */
@@ -140,19 +258,9 @@ img {vertical-align: middle;}
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* Number text (1/3 etc) */
@@ -164,34 +272,43 @@ img {vertical-align: middle;}
   top: 0;
 }
 
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 8px;
-  width: 20px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 5%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
 }
 
-.active, .dot:hover {
-  background-color: #717171;
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
+/* Six columns side by side */
+.column7 {
+  float: left;
+  width: 14.286%;
+}
+.column6 {
+  float: left;
+  width: 16.66%;
+}
+.column5 {
+  float: left;
+  width: 20%;
+}
+.column4 {
+  float: left;
+  width: 25%;
+}
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
 }
 
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 11px}
+.active,
+.demo:hover {
+  opacity: 1;
 }
