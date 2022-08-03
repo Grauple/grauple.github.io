@@ -310,24 +310,25 @@ function showSlides(n) {
       
       
 <script>
-let slideIndex = [1,1];
+
+let slideIndex1 = [1,1];
 let slideId = ["mySlides1", "mySlides2"]
-showSlides(1, 0);
-showSlides(1, 1);
+showSlides1(1, 0);
+showSlides1(1, 1);
 
 function plusSlides1(n, no) {
-  showSlides(slideIndex[no] += n, no);
+  showSlides1(slideIndex1[no] += n, no);
 }
 
 function showSlides1(n, no) {
   let i;
   let x = document.getElementsByClassName(slideId[no]);
-  if (n > x.length) {slideIndex[no] = 1}    
-  if (n < 1) {slideIndex[no] = x.length}
+  if (n > x.length) {slideIndex1[no] = 1}    
+  if (n < 1) {slideIndex1[no] = x.length}
   for (i = 0; i < x.length; i++) {
      x[i].style.display = "none";  
   }
-  x[slideIndex[no]-1].style.display = "block";  
+  x[slideIndex1[no]-1].style.display = "block";  
 }
 </script>
   
