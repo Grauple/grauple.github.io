@@ -84,11 +84,12 @@ img {
 .mySlides {
   display: none;
   
-}
-.mySlides1 {
-  display: none;
-  
-}
+.mySlides1, .mySlides2 {
+  display: none
+  }
+img {
+  vertical-align: middle;
+  }
 
 /* Add a pointer when hovering over the thumbnail images */
 .cursor {
