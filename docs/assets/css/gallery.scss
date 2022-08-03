@@ -41,6 +41,7 @@ body {
 }
 /* flexible boxes to be placed inside a flexible container to adjust with screen and window dimensions*/
 .flexbox-item-1 {
+  width: auto;
    /*display: flex
   justify-content: center;
   flex-grow: 1;
