@@ -199,9 +199,9 @@ function showSlides(n) {
   <div class="mySlides1">
     <img src="docs/assets/australia_pics/beach03.jpg" style="width:100%">
   </div>
+  <a class="prev" onclick="plusSlides1(-1)">❮</a>
+  <a class="next" onclick="plusSlides1(1)">❯</a>
 
-  <a class="prev" onclick="plusSlides1(-1, 0)">&#10094;</a>
-  <a class="next" onclick="plusSlides1(1, 0)">&#10095;</a>
 </div>
 
 <p>Slideshow 2:</p>
@@ -311,14 +311,14 @@ function showSlides(n) {
 
 let slideIndex = [1,1];
 let slideId = ["mySlides1", "mySlides2"]
-showSlides1(1, 0);
-showSlides1(1, 1);
+showSlides(1, 0);
+showSlides(1, 1);
 
 function plusSlides1(n, no) {
-  showSlides1(slideIndex[no] += n, no);
+  showSlides(slideIndex[no] += n, no);
 }
 
-function showSlides1(n, no) {
+function showSlides(n, no) {
   let i;
   let x = document.getElementsByClassName(slideId[no]);
   if (n > x.length) {slideIndex[no] = 1}    
