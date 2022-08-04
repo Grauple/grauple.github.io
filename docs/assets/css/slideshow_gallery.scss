@@ -186,11 +186,11 @@ body {
   overflow: hidden;
   background-color: #336699;
   font-family: Arial;
- z-index: 5;
   position: fixed;
-  
-  width: 100%; 
+   width: 100%; 
   display: flex;
+  flex-wrap: wrap;
+  top: 0;
 }
 
 /* Links inside the navbar */
