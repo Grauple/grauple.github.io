@@ -248,7 +248,7 @@ p {
   box-sizing: border-box;
 }
 .gallery-container {
- 
+ column-count: 4;
   max-width: 1000px;
   margin: 0 auto;
   background: #ffb81f;
