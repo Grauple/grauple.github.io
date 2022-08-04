@@ -178,12 +178,12 @@ function showSlides(n) {
   
   </script>
    </div>
-        </div>      
+        
  
         <!--End Picture preview-->
         <!--End slideshow Gallery-->
         <!--End flex box "side by side"-->
-
+<div>
        <br><br><br>
       <br><br><br>
        <br><br><br>
@@ -223,7 +223,29 @@ function showSlides(n) {
   <a class="prev" onclick="plusSlides1(-1)">❮</a>
   <a class="next" onclick="plusSlides1(1)">❯</a>
 </div>
-    
+  <script>
+
+let slideIndex = [1,1];
+let slideId = ["mySlides1", "mySlides2"]
+showSlides1(1, 0);
+showSlides1(1, 1);
+
+function plusSlides1(n, no) {
+  showSlides1(slideIndex[no] += n, no);
+}
+
+function showSlides1(n, no) {
+  let i;
+  let x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1}    
+  if (n < 1) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex[no]-1].style.display = "block";  
+}
+</script>
+      </div>
 
     <!--Below is a hold for a table gallery-->
 
@@ -310,28 +332,7 @@ function showSlides(n) {
            </table> -->
       
   
-      <script>
-
-let slideIndex = [1,1];
-let slideId = ["mySlides1", "mySlides2"]
-showSlides1(1, 0);
-showSlides1(1, 1);
-
-function plusSlides1(n, no) {
-  showSlides1(slideIndex[no] += n, no);
-}
-
-function showSlides1(n, no) {
-  let i;
-  let x = document.getElementsByClassName(slideId[no]);
-  if (n > x.length) {slideIndex[no] = 1}    
-  if (n < 1) {slideIndex[no] = x.length}
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";  
-  }
-  x[slideIndex[no]-1].style.display = "block";  
-}
-</script>
+      
       
       
 
