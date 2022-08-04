@@ -40,7 +40,7 @@
       
       <!--Insert Flex box containers to hold text to the left and an image gallery to the right-->
       
-<!--<div class="flexbox-container">
+<div class="flexbox-container">
                 <div class="flexbox-item
                             flexbox-item-1">
                   <p style="margin:15px;text-align:left">
@@ -66,7 +66,7 @@
    
                          <!--Begins formatting for Slideshow Gallery within flex box-->
 
-      <!--  <div class="container" style="height:auto">
+     <div class="container" style="height:auto">
   <div class="mySlides">
     <div class="numbertext">1 / 8</div>
     <img src="docs/assets/australia_pics/beach10.jpg" style="width:100%">
@@ -118,7 +118,7 @@
           
           <!--Begin section of the picture preview for the slideshow-->
 
- <!-- <div class="row">
+ <div class="row">
     <div class="column">
       <img class="demo cursor" src="docs/assets/australia_pics/beach10.jpg" style="width:100%" onclick="currentSlide(1)" alt="">
     </div>
@@ -178,7 +178,7 @@ function showSlides(n) {
   
   </script>
    </div>
-        </div>      -->
+        </div>      
  
         <!--End Picture preview-->
         <!--End slideshow Gallery-->
@@ -314,14 +314,14 @@ function showSlides(n) {
 
 let slideIndex = [1,1];
 let slideId = ["mySlides1", "mySlides2"]
-showSlides(1, 0);
-showSlides(1, 1);
+showSlides1(1, 0);
+showSlides1(1, 1);
 
 function plusSlides1(n, no) {
-  showSlides(slideIndex[no] += n, no);
+  showSlides1(slideIndex[no] += n, no);
 }
 
-function showSlides(n, no) {
+function showSlides1(n, no) {
   let i;
   let x = document.getElementsByClassName(slideId[no]);
   if (n > x.length) {slideIndex[no] = 1}    
