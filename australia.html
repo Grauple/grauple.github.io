@@ -227,14 +227,14 @@ function showSlides(n) {
 
 let slideIndex = [1,1];
 let slideId = ["mySlides1", "mySlides2"]
-showSlides1(1, 0);
-showSlides1(1, 1);
+showSlides(1, 0);
+showSlides(1, 1);
 
 function plusSlides1(n, no) {
-  showSlides1(slideIndex[no] += n, no);
+  showSlides(slideIndex[no] += n, no);
 }
 
-function showSlides1(n, no) {
+function showSlides(n, no) {
   let i;
   let x = document.getElementsByClassName(slideId[no]);
   if (n > x.length) {slideIndex[no] = 1}    
