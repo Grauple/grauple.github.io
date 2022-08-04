@@ -248,8 +248,8 @@ p {
   box-sizing: border-box;
 }
 .gallery-container {
- column-count: 4;
-  max-width: 1000px;
+  column-count: 4;
+  max-width: 1500px;
   margin: 0 auto;
   background: #336699;
   padding: 30px;
@@ -263,7 +263,7 @@ p {
 }
 
 @media screen and (max-width: 640px) {
-  .gallery-container{
+   .gallery-container{
     column-count: 2;
   }
 }
