@@ -188,6 +188,7 @@ body {
   z-index: 5;
   position: fixed;
   top: 0;
+  width: 100%;
 }
 
 /* Links inside the navbar */
@@ -216,6 +217,7 @@ body {
   background-color: inherit;
   font-family: inherit; /* Important for vertical align on mobile phones */
   margin: 0; /* Important for vertical align on mobile phones */
+}
 
   /* Add a darker blue background color to navbar links on hover */
 .navbar a:hover, .dropdown:hover .dropbtn {
