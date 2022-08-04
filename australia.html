@@ -173,8 +173,8 @@
   <div class="mySlides1 fade">
     <img src="docs/assets/australia_pics/beach03.jpg" style="width:100%">
   </div>
-  <a class="prev" onclick="plusSlides1(-1)">❮</a>
-  <a class="next" onclick="plusSlides1(1)">❯</a>
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
 
 </div>
 
@@ -192,9 +192,10 @@
     <img src="docs/assets/australia_pics/beach06.jpg" style="width:100%">
   </div>
 
-  <a class="prev" onclick="plusSlides1(-1)">❮</a>
-  <a class="next" onclick="plusSlides1(1)">❯</a>
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
 </div>
+    
   <script>
 
   
@@ -212,23 +213,21 @@ function currentSlide(n) {
   showSlides(slideIndex = n);
 }
 
-function showSlides(n) {
+function showSlides(n, no) {
   let i;
-  let slides = document.getElementsByClassName("mySlides", "mySlides1", "mySlides2");
-  let dots = document.getElementsByClassName("demo");
-  let captionText = document.getElementById("caption");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
+  let x = document.getElementsByClassName(slideId[no]);
+      let dots = document.getElementsByClassName("demo");
+      let captionText = document.getElementById("caption");
+  if (n > x.length) {slideIndex[no] = 1}    
+  if (n < 1) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
   }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
+  x[slideIndex[no]-1].style.display = "block";
   dots[slideIndex-1].className += " active";
   captionText.innerHTML = dots[slideIndex-1].alt;
-}
+}  
+    
    
   </script>
 
