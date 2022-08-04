@@ -190,15 +190,15 @@ function showSlides(n) {
  <!--Put below into flexbox ?????-->   
       <p>Slideshow 1:</p>
 <div class="slideshow-container">
-  <div class="mySlides1">
+  <div class="mySlides1 fade">
     <img src="docs/assets/australia_pics/beach09.jpg" style="width:100%">
   </div>
 
-  <div class="mySlides1">
+  <div class="mySlides1 fade">
     <img src="docs/assets/australia_pics/beach02.jpg" style="width:100%">
   </div>
 
-  <div class="mySlides1">
+  <div class="mySlides1 fade">
     <img src="docs/assets/australia_pics/beach03.jpg" style="width:100%">
   </div>
   <a class="prev" onclick="plusSlides1(-1)">❮</a>
@@ -208,15 +208,15 @@ function showSlides(n) {
 
 <p>Slideshow 2:</p>
 <div class="slideshow-container">
-  <div class="mySlides2">
+  <div class="mySlides2 fade">
     <img src="docs/assets/australia_pics/beach04.jpg" style="width:100%">
   </div>
 
-  <div class="mySlides2">
+  <div class="mySlides2 fade">
     <img src="docs/assets/australia_pics/beach05.jpg" style="width:100%">
   </div>
 
-  <div class="mySlides2">
+  <div class="mySlides2 fade">
     <img src="docs/assets/australia_pics/beach06.jpg" style="width:100%">
   </div>
 
@@ -230,19 +230,19 @@ let slideId = ["mySlides1", "mySlides2"]
 showSlides(1, 0);
 showSlides(1, 1);
 
-function plusSlides1(n, no) {
+function plusSlides(n, no) {
   showSlides(slideIndex[no] += n, no);
 }
 
 function showSlides(n, no) {
   let i;
   let x = document.getElementsByClassName(slideId[no]);
-  if (n > x.length) {slideIndex[no] = 1}    
+  if (n > x.length) {slideIndex[no] = 1}
   if (n < 1) {slideIndex[no] = x.length}
   for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";  
+    x[i].style.display = "none";
   }
-  x[slideIndex[no]-1].style.display = "block";  
+  x[slideIndex[no]-1].style.display = "block";
 }
 </script>
       </div>
