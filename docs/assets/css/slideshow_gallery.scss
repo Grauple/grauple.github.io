@@ -112,7 +112,7 @@ img {
   font-size: 20px;
   border-radius: 0 3px 3px 0;
   user-select: none;
-  -webkit-user-select: none;
+ /* -webkit-user-select: none;*/
 }
 
 /* Position the "next button" to the right */
@@ -124,7 +124,7 @@ img {
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
-  background-color: rgba(400, 0, 0, 0.8);
+  background-color: rgba(000, 0, 0, 0.8);
 }
 
 /* Number text (1/3 etc) */
@@ -164,6 +164,16 @@ img {
 .active,
 .demo:hover {
   opacity: 1;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
 }
 
 ul {
