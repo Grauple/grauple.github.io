@@ -187,9 +187,9 @@ body {
   background-color: #336699;
   font-family: Arial;
   position: fixed;
-   width: 100%; 
+  /* width: 100%; 
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap;*/
  
 }
 
@@ -214,6 +214,7 @@ body {
 
 /* Dropdown button */
 .dropdown .dropbtn {
+  cursor: pointer;
   font-size: 16px;
   border: none;
   outline: none;
@@ -226,7 +227,7 @@ body {
 }
 
   /* Add a darker blue background color to navbar links on hover */
-.navbar a:hover, .dropdown:hover .dropbtn {
+.navbar a:hover, .dropdown:hover .dropbtn:focus {
   background-color: #225588;
 }
   /* Dropdown content (hidden by default) */
@@ -256,6 +257,8 @@ body {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+.show {
+  display: block;
   
   /*------------------------Nav Bar Ends here-------------------*/
 
