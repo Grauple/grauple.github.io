@@ -12,8 +12,6 @@ body {
   border: none;
   padding: 15px;
   margin:5px;
-  
-  
 }
 /* Container flex boxes for organization within the page */
 .flexbox-container {
@@ -34,10 +32,8 @@ body {
   width: 200px;
  /* margin: 15px;*/
   max-width: 750px;
- 
-   
-  /*  !!!! Added flex, justify content, and align items to the flexbox and flexbox items*/
 }
+
 /* flexible boxes to be placed inside a flexible container to adjust with screen and window dimensions*/
 .flexbox-item-1 {
    display: flex;
@@ -47,8 +43,6 @@ body {
   flex-shrink: 2;
   min-height: 200px; 
   min-width:200px;
- 
-  
 }
 
 /* flexible boxes to be placed inside a flexible container to adjust with screen and window dimensions*/
@@ -185,9 +179,9 @@ body {
   overflow: hidden;
   background-color: #336699;
   font-family: Arial;
-  width: 100%; 
+ /* width: 100%; 
   display: flex;
-  position: fixed;
+  position: fixed;*/
  
 }
 
