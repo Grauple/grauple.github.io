@@ -185,30 +185,30 @@ body {
   overflow: hidden;
   background-color: #336699;
   font-family: Arial;
-  z-index: 5;
+ /* z-index: 5;
   position: fixed;
   
   width: 100%; 
-  display: flex;
+  display: flex;*/
 }
 
 /* Links inside the navbar */
 .navbar a {
-  display: flex;
   float: left;
   font-size: 16px;
   color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  z-index: 5;
+  /*z-index: 5;
+  display: flex;*/
 }
 
 /* The dropdown container */
 .dropdown {
   float: left;
   overflow: hidden;
-  z-index: 5;
+ /* z-index: 5;*/
 }
 
 /* Dropdown button */
@@ -218,7 +218,7 @@ body {
   outline: none;
   color: white;
   padding: 14px 16px;
-  z-index: 5;
+ /* z-index: 5;*/
   background-color: inherit;
   font-family: inherit; /* Important for vertical align on mobile phones */
   margin: 0; /* Important for vertical align on mobile phones */
@@ -235,7 +235,7 @@ body {
   background-color: #336699;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 6;
+  z-index: 1;
 }
 
 /* Links inside the dropdown */
@@ -246,7 +246,7 @@ body {
   text-decoration: none;
   display: block;
   text-align: left;
-  z-index: 5;
+  /*z-index: 5;*/
 }
   .dropdown-content a:hover {
   background-color: #225588;
