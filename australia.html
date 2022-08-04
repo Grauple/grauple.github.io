@@ -146,37 +146,7 @@
   </div>
 </div>
         </div>
-  <script>
-let slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("demo");
-  let captionText = document.getElementById("caption");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
-}
   
-  </script>
    </div>
         
  
@@ -188,8 +158,7 @@ function showSlides(n) {
       <br><br><br>
        <br><br><br>
   <div class="flexbox-container">
-                <div class="flexbox-item
-                            flexbox-item-1">
+                
  <!--Put below into flexbox ?????-->   
       <p>Slideshow 1:</p>
 <div class="slideshow-container">
@@ -226,19 +195,44 @@ function showSlides(n) {
   <a class="prev" onclick="plusSlides1(-1)">❮</a>
   <a class="next" onclick="plusSlides1(1)">❯</a>
 </div>
-  
-<script>
+  <script>
 
+  
 let slideIndex = [1,1];
-let slideId = ["mySlides1", "mySlides2"]
+let slideId = ["mySlides", "mySlides1", "mySlides2"]
 showSlides(1, 0);
 showSlides(1, 1);
+showSlides(1, 2);
 
-function plusSlides(n, no) {
-  showSlides(slideIndex[no] += n, no);
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+    function plusSlides1(n) {
+  showSlides1(slideIndex += n);
 }
 
-function showSlides(n, no) {
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+    function showSlides1(n, no) {
   let i;
   let x = document.getElementsByClassName(slideId[no]);
   if (n > x.length) {slideIndex[no] = 1}
@@ -248,9 +242,11 @@ function showSlides(n, no) {
   }
   x[slideIndex[no]-1].style.display = "block";
 }
-</script>
+  
+  </script>
+
       </div>
-      </div>
+   
 
     <!--Below is a hold for a table gallery-->
 
