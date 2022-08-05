@@ -1,11 +1,12 @@
 <html>
   <head>
     
-        <link rel="stylesheet" type="text/css" href="docs/assets/css/slideshow_gallery.scss">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href=docs/assets/css/slideshow_gallery.scss>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <Title>Harris Vegas Trips</Title>
        <link rel="icon" href="docs/assets/Tab Logo.png">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="utf-8">
+       <meta charset="utf-8">
     </head>  
     
     <body>
@@ -130,10 +131,24 @@
         </div>
         </div>
   
-       
+        <!--Begin responsive gallery container, which holds up to 3 columns based on width-->
+      
+     <div class="gallery-container">
+        <img class="image2" src="docs/assets/vegas_pics/Black_Tap.jpg">
+        <img class="image2" src="docs/assets/vegas_pics/Luxor_Beam.jpg">
+        <img class="image2" src="docs/assets/vegas_pics/TI_ship.jpg">
+        <img class="image2" src="docs/assets/vegas_pics/Venitian_fountain.jpg">
+        <img class="image2" src="docs/assets/vegas_pics/Wynn_Flower.jpg">
+             
+        
+      </div>
+ <!--End responsive gallery container, which holds up to 3 columns based on width-->
+        <!--End Picture preview-->
+        <!--End slideshow Gallery-->
+        <!--End flex box "side by side"-->
         
             
-      </body>
+     
   <script>
 let slideIndex = 1;
 showSlides(slideIndex);
@@ -163,5 +178,16 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
+    
+                 /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}  
 </script>
+   </body>
 </html>
