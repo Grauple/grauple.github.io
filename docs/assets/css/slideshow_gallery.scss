@@ -186,7 +186,8 @@ body {
   position: sticky;
   position: -webkit-sticky;
   top: 0;
-  /*position: fixed;*/
+  z-index: 99;
+ 
 }
 
 /* Style the links inside the navigation bar */
