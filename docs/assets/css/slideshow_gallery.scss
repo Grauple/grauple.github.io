@@ -183,7 +183,7 @@ body {
 .topnav {
   background-color: #2f4452;
   overflow: hidden;
-  position: fixed;
+  /*position: fixed;*/
 }
 
 /* Style the links inside the navigation bar */
@@ -269,7 +269,7 @@ body {
     display: none;
   }
   .topnav a.icon {
-    float: left;
+    float: right;
     display: block;
   }
 }
