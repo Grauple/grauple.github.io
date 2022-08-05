@@ -9,8 +9,24 @@
     </head>  
     
     <body>
-      
-  <div class="topnav" id="myTopnav">
+      <div class="topnav" id="myTopnav">
+              <a href="#home" class="active">Home</a>
+              <a href="#news">News</a>
+              <a href="#contact">Contact</a>
+    <div class="dropdown">
+          <button class="dropbtn">Dropdown
+              <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+    </div>
+  </div>
+  <a href="#about">About</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+ <!-- <div class="topnav" id="myTopnav">
   <a href="https://grauple.github.io/">Home</a>
   <div class="dropdown">
     <button class="dropbtn">Dropdown
@@ -29,7 +45,7 @@
         <a href="https://grauple.github.io/forms.html">Forms</a>
         <a href="https://grauple.github.io/how_to.html">Hobbies: How To</a>
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-</div>
+</div> -->
        <!-- <ul>
              <li><a href="https://grauple.github.io/">Home</a></li>
             <li><a href="https://grauple.github.io/south_carolina.html">South Carolina</a></li>
@@ -287,7 +303,8 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
-             /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+  
+  /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
 function myFunction() {
   var x = document.getElementById("myTopnav");
   if (x.className === "topnav") {
