@@ -8,20 +8,26 @@
     </head>  
     
     <body>
-        <ul>
-            <li><a href="https://grauple.github.io/">Home</a></li>
-            <li><a href="https://grauple.github.io/south_carolina.html">South Carolina</a></li>
-            <li><a href="https://grauple.github.io/alaska.html">Alaska</a></li>
-            <li><a href="https://grauple.github.io/australia.html">Australia</a></li>
-            <li><a href="https://grauple.github.io/vegas.html">Vegas</a></li>
-            <li><a href="https://grauple.github.io/louisiana.html">Louisiana</a></li>
-            <li><a href="https://grauple.github.io/branson.html">Branson</a></li>
-            <li><a href="https://grauple.github.io/florida.html">Florida</a></li>
-            <li><a href="https://grauple.github.io/A4E.html">A4E Homeschool</a></li>
-            <li><a href="">Contact</a></li>
-            <li><a href="">About</a></li>
-
-        </ul>
+        <div class="topnav" id="myTopnav">
+  <a href="https://grauple.github.io/">Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">Dropdown
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+                <a href="https://grauple.github.io/south_carolina.html">South Carolina</a>
+                <a href="https://grauple.github.io/alaska.html">Alaska</a>
+                <a href="https://grauple.github.io/australia.html">Australia</a>
+                <a href="https://grauple.github.io/louisiana.html">Louisiana</a>
+                <a href="https://grauple.github.io/branson.html">Branson</a>
+                <a href="https://grauple.github.io/florida.html">Florida</a>
+    </div>
+  </div>
+   <a href="https://grauple.github.io/A4E.html">A4E Homeschool</a>
+        <a href="https://grauple.github.io/forms.html">Forms</a>
+        <a href="https://grauple.github.io/how_to.html">Hobbies: How To</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
       <br>
       <br>
       <h1>
@@ -290,7 +296,16 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
-             
+  
+             /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}  
 
 </script>
       
