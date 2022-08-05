@@ -181,7 +181,7 @@ body {
 }
 /*------------------------Nav Bar Starts here-------------------*/
 .topnav {
-  background-color: #336699;
+  background-color: #333;
   overflow: hidden;
 }
 
@@ -189,7 +189,7 @@ body {
 .topnav a {
   float: left;
   display: block;
-  color: #225588;
+  color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -198,7 +198,7 @@ body {
 
 /* Add an active class to highlight the current page */
 .active {
-  background-color: #132d47;
+  background-color: #04AA6D;
   color: white;
 }
 
