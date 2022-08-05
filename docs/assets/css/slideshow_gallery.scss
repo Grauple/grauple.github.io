@@ -183,6 +183,9 @@ body {
 .topnav {
   background-color: #2f4452;
   overflow: hidden;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
   /*position: fixed;*/
 }
 
