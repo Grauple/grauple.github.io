@@ -12,20 +12,26 @@
     <body>
         
        <!-- Navigation bar and logo for the Party of Seven page -->
-        <ul>
-            <li><a href="https://grauple.github.io/">Home</a></li>
-            <li><a href="https://grauple.github.io/south_carolina.html" target="_blank">South Carolina</a></li>
-            <li><a href="https://grauple.github.io/alaska.html" target="_blank">Alaska</a></li>
-            <li><a href="https://grauple.github.io/australia.html" target="_blank">Australia</a></li>
-            <li><a href="https://grauple.github.io/vegas.html" target="_blank">Vegas</a></li>
-            <li><a href="https://grauple.github.io/louisiana.html" target="_blank">Louisiana</a></li>
-            <li><a href="https://grauple.github.io/branson.html" target="_blank">Branson</a></li>
-            <li><a href="https://grauple.github.io/florida.html" target="_blank">Florida</a></li>
-            <li><a href="https://grauple.github.io/A4E.html" target="_blank">A4E Homeschool</a></li>
-            <li><a href="https://grauple.github.io/forms.html" target="_blank">Forms</a></li>
-            <li><a href="https://grauple.github.io/how_to.html" target="_blank">Hobbies: How To</a></li>
-
-        </ul>
+       <div class="topnav" id="myTopnav">
+  <a href="https://grauple.github.io/">Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">Dropdown
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+                <a href="https://grauple.github.io/south_carolina.html">South Carolina</a>
+                <a href="https://grauple.github.io/alaska.html">Alaska</a>
+                <a href="https://grauple.github.io/australia.html">Australia</a>
+                <a href="https://grauple.github.io/louisiana.html">Louisiana</a>
+                <a href="https://grauple.github.io/branson.html">Branson</a>
+                <a href="https://grauple.github.io/florida.html">Florida</a>
+    </div>
+  </div>
+   <a href="https://grauple.github.io/A4E.html">A4E Homeschool</a>
+        <a href="https://grauple.github.io/forms.html">Forms</a>
+        <a href="https://grauple.github.io/how_to.html">Hobbies: How To</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
         <br>
         <br>
         <br>
@@ -319,5 +325,16 @@
                                                   
                     </tr> 
         </table> -->
+        <script>
+        function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+
+</script>
   </body>
   </html> 
