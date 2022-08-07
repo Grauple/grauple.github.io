@@ -57,6 +57,21 @@ header {
   margin: 35px;
 }
 
+.flexbox-item-3 {
+  flex-grow: 1;
+  flex-shrink: 2;
+  min-height: 40px; 
+  min-width:450px;
+  margin: 35px;
+}
+
+.flexbox-item-4 {
+  flex-grow: 1;
+  flex-shrink: 2;
+  min-height: 400px; 
+  min-width:450px;
+  margin: 35px;
+}
 
 ul {
   list-style-type: none;
