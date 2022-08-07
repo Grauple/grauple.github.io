@@ -27,10 +27,16 @@ header {
 }
 /* flexible boxes to be placed inside a flexible container to adjust with screen and window dimensions*/
 .flexbox-item {
-  width: 400px;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+ /* margin: 15px;*/
+  max-width: 750px;
+   /*   width: 400px;
   margin: 35px;
-  /*  min-width: 432px;
-  min-height: 240px; */
+ */
   
   
 }
