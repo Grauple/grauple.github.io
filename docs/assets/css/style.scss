@@ -13,30 +13,11 @@ header {
   padding: 15px;
   margin:5px;
   
-  a:link {
-  color: orange;
-  background-color: transparent;
-  text-decoration: none;
-}
-a:visited {
-  color: #ff3300;
-  background-color: transparent;
-  text-decoration: none;
-}
-a:hover {
-  color: white;
-  background-color: transparent;
-  text-decoration: underline;
-}
-a:active {
-  color: yellow;
-  background-color: transparent;
-  text-decoration: underline;
-}
+  
 }
 /* Container flex boxes for organization within the page */
 .flexbox-container {
-   display: flex;
+  display: flex;
   flex-wrap: wrap;
  justify-content: center;
   align-items: center;
@@ -46,36 +27,29 @@ a:active {
 }
 /* flexible boxes to be placed inside a flexible container to adjust with screen and window dimensions*/
 .flexbox-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 200px;
- /* margin: 15px;*/
-  max-width: 750px;*/
+  width: 400px;
+  margin: 35px;
+  /*  min-width: 432px;
+  min-height: 240px; */
   
   
 }
 /* flexible boxes to be placed inside a flexible container to adjust with screen and window dimensions*/
 .flexbox-item-1 {
-   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-grow: 1;
   flex-shrink: 1;
-  min-width:250px;
-  min-height: 250px;
-  padding-top: 50px;
+  min-height: 400px; 
+  min-width:400px;
+  margin: 35px;
 }
 
 /* flexible boxes to be placed inside a flexible container to adjust with screen and window dimensions*/
 .flexbox-item-2 {
-   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-  flex-shrink: 2;
-  min-height: 200px; 
-  min-width:200px;
+  flex-grow: 2;
+  flex-shrink: 1;
+  min-height: 400px; 
+  min-width:400px;
+  margin: 35px;
 }
 
 ul {
