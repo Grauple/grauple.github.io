@@ -22,17 +22,22 @@ header {
  justify-content: center;
   align-items: center;
   align-content: center;
-  margin: 25px;
+  margin: 15px;
+
   
 }
 /* flexible boxes to be placed inside a flexible container to adjust with screen and window dimensions*/
 .flexbox-item {
-  width: 400px;
+  /* width: 400px;
   margin: 35px;
-  /*  min-width: 432px;
+    min-width: 432px;
   min-height: 240px; */
   
-  
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  max-width: 750px;
 }
 /* flexible boxes to be placed inside a flexible container to adjust with screen and window dimensions*/
 .flexbox-item-1 {
@@ -51,6 +56,7 @@ header {
   min-width:400px;
   margin: 35px;
 }
+
 
 ul {
   list-style-type: none;
