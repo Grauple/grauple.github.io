@@ -29,6 +29,7 @@ header {
 .flexbox-item {
   width: 400px;
   margin: 35px;
+  display: flex;
   /*  min-width: 432px;
   min-height: 240px; */
   
@@ -37,9 +38,9 @@ header {
 /* flexible boxes to be placed inside a flexible container to adjust with screen and window dimensions*/
 .flexbox-item-1 {
   flex-grow: 1;
-  flex-shrink: 1;
-  min-height: 400px; 
-  min-width:400px;
+  flex-shrink: 2;
+  min-height: 200px; 
+  min-width:200px;
   margin: 35px;
 }
 
