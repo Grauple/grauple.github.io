@@ -42,7 +42,7 @@ header {
 /* flexible boxes to be placed inside a flexible container to adjust with screen and window dimensions*/
 .flexbox-item-1 {
   flex-grow: 1;
-  flex-shrink: 1;
+  flex-shrink: 2;
   min-height: 400px; 
   min-width:400px;
   margin: 35px;
