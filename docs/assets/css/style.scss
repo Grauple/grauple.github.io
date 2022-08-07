@@ -23,26 +23,21 @@ header {
   align-items: center;
   align-content: center;
   margin: 15px;
-
   
 }
 /* flexible boxes to be placed inside a flexible container to adjust with screen and window dimensions*/
 .flexbox-item {
-  /* width: 400px;
+  width: 400px;
   margin: 35px;
-    min-width: 432px;
+  /*  min-width: 432px;
   min-height: 240px; */
   
-   display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 200px;
-  max-width: 750px;
+  
 }
 /* flexible boxes to be placed inside a flexible container to adjust with screen and window dimensions*/
 .flexbox-item-1 {
   flex-grow: 1;
-  flex-shrink: 2;
+  flex-shrink: 1;
   min-height: 400px; 
   min-width:400px;
   margin: 35px;
@@ -54,22 +49,6 @@ header {
   flex-shrink: 1;
   min-height: 400px; 
   min-width:400px;
-  margin: 35px;
-}
-
-.flexbox-item-3 {
-  flex-grow: 1;
-  flex-shrink: 2;
-  min-height: 40px; 
-  min-width:450px;
-  margin: 35px;
-}
-
-.flexbox-item-4 {
-  flex-grow: 1;
-  flex-shrink: 2;
-  min-height: 400px; 
-  min-width:450px;
   margin: 35px;
 }
 
