@@ -4,6 +4,26 @@ body {
    background-color: #1a191a;
   color: #FCFCFC;
 } 
+a:link {
+  color: orange;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: #ff3300;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: white;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
 
 /* Container to hold all page contents */
 .page-content {
