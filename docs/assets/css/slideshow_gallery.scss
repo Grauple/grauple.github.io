@@ -363,6 +363,14 @@ p {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0, .2);
   box-sizing: border-box;
 }
+.image3 {
+  display: block;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  box-sizing: border-box;
+}
 .gallery-container {
   column-count: 4;
   max-width: 1500px;
