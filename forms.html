@@ -228,7 +228,7 @@
                     </tr>  
                     <tr>   
                          <td style="width 50%"> Total after tax: </td>
-                         <td ><input type="Text" id="totalRounded" value=""></td>
+                         <td ><input type="Text" id="ans" value=""></td>
                     </tr>  
                    <tr>   
                          <td style="width 50%"> Calculate</td>
@@ -244,6 +244,7 @@
       tax = .09
       total = cost*(1+tax);
       totalRounded = +(total.toFixed(2));
+      document.getElementByID('ans').value = totalRounded;
 	     
 	/*alert ("Your total is: $" + totalRounded);     */
       
