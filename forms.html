@@ -218,7 +218,33 @@
 	  <button type="button" onclick="alert('Thank you for your submission!')">Submit</button>    
 	  <br> <br>     
  <hr>      
-       
+            <form name="Taxes"> 
+                 <table style="width:40%">
+                                    
+                    <tr>   
+                         <td style="width 50%">Enter the item/total price</td>
+                         <td ><input type="Text" id="price" value=""></td>
+                    </tr>  
+                    <tr>   
+                         <td style="width 50%"> Total after tax: </td>
+                         <td ><input type="Text" id="ttl" value=""></td>
+                    </tr>  
+                   <tr>   
+                         <td style="width 50%"> Calculate</td>
+                         <td ><input type="Button" id="Calculate" onClick="ttlcost()" value="Calculate"></td>
+                    </tr>  
+                   
+                  
+     </table>
+     </form>    
+	       <script>
+     function ttlcost(Taxes){
+      cost = document.getElementById("price").value;
+      tax = .09
+      total = cost*(1+tax);
+       alert ("Total after tax: $" + total);
+       }
+       </script>
     <script>
      /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
 function myFunction() {
