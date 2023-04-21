@@ -218,6 +218,7 @@
 	  <button type="button" onclick="alert('Thank you for your submission!')">Submit</button>    
 	  <br> <br>     
  <hr>      
+	       <br>
             <form name="Taxes"> 
                  <table style="width:40%">
                                     
@@ -242,8 +243,8 @@
       cost = document.getElementById("price").value;
       tax = .09
       total = cost*(1+tax);
-	let totalResult = total.toFixed(2);    
-	     document.getElementById("ans").innerHTML = totalResult;
+	 
+      document.getElementById("ans").innerHTML = total;
        
        }
        </script>
