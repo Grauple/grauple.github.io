@@ -243,8 +243,9 @@
       cost = document.getElementById("price").value;
       tax = .09
       total = cost*(1+tax);
-	 
-      document.getElementById("ans").innerHTML = total;
+      totalRounded = +(total.toFixed(2));
+	alert ("Your total is: $" + totalRounded);     
+      
        
        }
        </script>
