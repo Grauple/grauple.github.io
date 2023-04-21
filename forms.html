@@ -227,7 +227,7 @@
                     </tr>  
                     <tr>   
                          <td style="width 50%"> Total after tax: </td>
-                         <td ><input type="Text" id="ttl" value=n></td>
+                         <td ><input type="Text" id="ans" value=""></td>
                     </tr>  
                    <tr>   
                          <td style="width 50%"> Calculate</td>
@@ -242,8 +242,8 @@
       cost = document.getElementById("price").value;
       tax = .09
       total = cost*(1+tax);
-	total result = num.toFixed(2);    
-	     document.getElementById("taxresult").innerHTML = n
+	let totalResult = total.toFixed(2);    
+	     document.getElementById("ans").innerHTML = totalResult
        
        }
        </script>
